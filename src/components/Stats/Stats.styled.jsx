@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-export const StatList = styled.div`
+export const StatsList = styled.div`
   margin: 0 auto;
   padding-top: 5px;
   width: 200px;

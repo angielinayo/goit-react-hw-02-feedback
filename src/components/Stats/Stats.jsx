@@ -1,7 +1,7 @@
-import { StatList } from './Stats.styled';
+import { StatsList } from './Stats.styled';
 import PropTypes from 'prop-types';
 
-export const Statistics = ({
+export const Stats = ({
   good,
   neutral,
   bad,
@@ -10,7 +10,7 @@ export const Statistics = ({
 }) => {
   console.log(typeof feedbackPercentage);
   return (
-    <StatList>
+    <StatsList>
       <ul>
         <li>
           Good <span>{good}</span>
@@ -28,11 +28,11 @@ export const Statistics = ({
           Positive feedback: <span>{feedbackPercentage}%</span>
         </li>
       </ul>
-    </StatList>
+    </StatsList>
   );
 };
 
-Statistics.propTypes = {
+Stats.propTypes = {
   good: PropTypes.number.isRequired,
   neutral: PropTypes.number.isRequired,
   bad: PropTypes.number.isRequired,

@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import { FeedbackOptions } from './FeedbackOptions/FeedbackOptions';
-import { Statistics } from './Stats/Stats';
+import { Stats } from './Stats/Stats';
 import { Section } from './Section/Section';
 import { Notification } from './Notification/Notification';
 import PropTypes from 'prop-types';
@@ -35,7 +35,7 @@ export class App extends Component {
         </Section>
         <Section title="Statistics">
           {this.countTotalFeedback() !== 0 ? (
-            <Statistics
+            <Stats
               good={this.state.good}
               neutral={this.state.neutral}
               bad={this.state.bad}

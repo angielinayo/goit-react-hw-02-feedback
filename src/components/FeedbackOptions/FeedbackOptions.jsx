@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
-import { ButtonContainer } from './FeedbackOptions.styled';
+import { Buttons } from './FeedbackOptions.styled';
 
 export const FeedbackOptions = ({ options, updateState }) => {
   return (
-    <ButtonContainer>
+    <Buttons>
       {options.map(option => {
         return (
           <button
@@ -16,7 +16,7 @@ export const FeedbackOptions = ({ options, updateState }) => {
           </button>
         );
       })}
-    </ButtonContainer>
+    </Buttons>
   );
 };
 

@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-export const ButtonContainer = styled.div`
+export const Buttons = styled.div`
   display: flex;
   justify-content: center;
   gap: 20px;
